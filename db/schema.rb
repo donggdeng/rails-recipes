@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_26_125736) do
+ActiveRecord::Schema.define(version: 2021_11_26_131751) do
 
   create_table "events", force: :cascade do |t|
     t.string "name"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2021_11_26_125736) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "friendly_id"
+    t.string "status", default: "draft"
     t.index ["friendly_id"], name: "index_events_on_friendly_id", unique: true
   end
 
