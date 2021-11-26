@@ -10,22 +10,22 @@
   </div>
 <% end %>
 
-<div class="form-group">
-  <%= f.label :name %>
+<div class="form-group mb-3">
+  <%= f.label :name, class: "mb-2" %>
   <%= f.text_field :name, :class => "form-control" %>
 </div>
 
-<div class="form-group">
+<div class="form-group mb-3">
     <%= f.label :status %>
     <% Event::STATUS.each do |status| %>
-        <label>
-            <%= f.radio_button :status, status %>
+        <div class="form-check form-check-inline">
+            <%= f.radio_button :status, status, class: "form-check-input" %>
             <%= t(status, scope: "event.status") %>
-        </label>
+        </div>
     <% end %>
 </div>
 
-<div class="form-group">
-  <%= f.label :description %>
+<div class="form-group mb-3">
+  <%= f.label :description, class: "mb-2" %>
   <%= f.text_area :description, :class => "form-control" %>
 </div>
