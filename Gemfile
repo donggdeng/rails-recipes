@@ -24,6 +24,7 @@ gem 'jbuilder', '~> 2.7'
 
 gem 'devise'
 gem 'bootstrap', '~> 5.1', '>= 5.1.3'
+gem 'paper_trail'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
