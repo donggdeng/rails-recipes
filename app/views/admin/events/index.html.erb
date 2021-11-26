@@ -7,14 +7,17 @@
 <table class="table">
     <tr>
         <th>Event Name</th>
+        <th>Status</th>
         <th>Actions</th>
     </tr>
     <% @events.each do |event| %>
         <tr>
             <td><%= link_to event.name, admin_event_path(event) %></td>
+            <td><%= t(event.status, scope: "event.status") %></td>
             <td>
-            <%= link_to "Edit", edit_admin_event_path(event), :class => "btn btn-default" %>
-            <%= link_to "Delete", admin_event_path(event), :method => "delete", :data => { :confirm => "Are you sure?" }, :class => "btn btn-danger" %>
+                <%= link_to "Edit", edit_admin_event_path(event), :class => "btn btn-default" %>
+                <%= link_to "Delete", admin_event_path(event), :method => "delete", :data => { :confirm => "Are you sure?" }, :class => "btn btn-danger" %>
+            </td>
         </tr>
     <% end %>
 </table>
