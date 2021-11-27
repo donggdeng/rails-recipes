@@ -6,17 +6,11 @@
 //= require jquery
 //= require popper
 //= require bootstrap
-//= require select2
-//= require select2-full
-//= require nested_form_fields
 
 import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
-
-import "../stylesheets/application"
-import "../select2/js/select2.min"
 
 var jQuery = require('jquery')
 global.$ = global.jQuery = jQuery;
