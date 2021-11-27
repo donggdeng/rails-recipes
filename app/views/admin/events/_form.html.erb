@@ -32,7 +32,7 @@
 
 <div class="form-group mb-3">
   <%= f.label :description, class: "mb-2" %>
-  <%= f.text_area :description, :class => "form-control" %>
+  <%= f.cktext_area :description, ckeditor: { language: 'zh-CN' } %>
 </div>
 
 <%= f.nested_fields_for :tickets do |ff| %>

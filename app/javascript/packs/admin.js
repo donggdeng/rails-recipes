@@ -4,6 +4,7 @@
 //= require bootstrap-sprockets
 //= require select2
 //= require nested_form_fields
+//= require ckeditor/init
 
 import "../select2/js/select2.min"
 

@@ -27,6 +27,7 @@ gem 'bootstrap', '~> 5.1', '>= 5.1.3'
 gem 'paper_trail'
 gem 'select2-rails'
 gem 'nested_form_fields'
+gem 'ckeditor', '~> 5.1', '>= 5.1.1'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
