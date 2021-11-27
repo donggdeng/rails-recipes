@@ -6,6 +6,8 @@ class Event < ApplicationRecord
     before_validation :generate_friendly_id, on: :create
 
     belongs_to :category, optional: true
+    has_many :tickets, dependent: :destroy, inverse_of: :event
+    accepts_nested_attributes_for :tickets, allow_destroy: true, reject_if: :all_blank
 
 
     def to_param
