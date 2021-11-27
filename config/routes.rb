@@ -2,8 +2,8 @@ Rails.application.routes.draw do
 
   devise_for :users
   resources :events
-  
-  get 'user', action: :show, controller: 'users'
+
+  resource :user
 
   namespace :admin do
     root "events#index"
